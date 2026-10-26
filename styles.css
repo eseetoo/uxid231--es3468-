@@ -1,46 +1,93 @@
-body {
-    background: #f0f0f0;
-    color: #333;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 20px;
-}   
-
-footer {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: right;
+:root{
+    --background-beige: #F8F7F2;
+    --footer-beige: #F1EFE9;
+    --dark-text: #241B16;
+    --light-text: #ccc;
+    --accent-red: #E8334A;
+    --accent-blue: #0057E1;
 }
 
-#hero {
-    background: #eee;
-    padding: 20px;
-    text-align: center;
+body {
+    background: var(--background-beige);
+    color: var(--dark-text);
+}   
+
+body a {
+    color: var(--dark-text);
+}
+
+body a:hover {
+    color: var(--accent-blue);
+}
+
+header {
+    background: var(--background-beige);
+    color: var(--dark-text);
 }
 
 nav {
-    background: #444;
-    color: #fff;
-    padding: 10px;
+    background: var(--background-beige);
+    color: var(--dark-text);
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+    color: var(--dark-text);
 }
+
+nav a:hover {
+    color: var(--accent-blue);
+}  
+
+main {
+    background: var(--background-beige);
+    color: var(--dark-text);
+}
+
+main a {
+    color: var(--dark-text);
+}
+
+main a:hover {
+    color: var(--accent-blue);
+}
+
+main #contact_main {
+    background: var(--accent-red);
+    color: var(--light-text);
+}
+
+footer {
+    background: var(--footer-beige);
+    color: var(--dark-text);
+}
+
+footer a {
+    color: var(--dark-text);
+}
+
+footer a:hover {
+    color: var(--accent-blue);
+}
+
 
 .button {
-    background: #008cba;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+    background: var(--footer-beige);
+    color: var(--dark-text);
 }
 
+button a:hover {
+    background: var(--accent-blue);
+    color: #fff;
+}
+
+button :focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+
 h1 {
-    font -size: 2em;
+    font-size: 2em;
 }
 
 h2 {
@@ -58,14 +105,4 @@ p {
 
 main p {
     /* main p selector */
-}
-
-/* pseudo-class selector */
-
-nav a:hover {
-    /* nav a:hover selector */
-}   
-
-button a:hover {
-    /* button a:hover selector */
 }
