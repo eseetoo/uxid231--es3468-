@@ -20,6 +20,11 @@ body a:hover {
     color: var(--accent-blue);
 }
 
+body #contact.html {
+    background: var(--accent-red);
+    color: var(--dark-text);
+}
+
 header {
     background: var(--background-beige);
     color: var(--dark-text);
@@ -43,17 +48,14 @@ main {
     color: var(--dark-text);
 }
 
+
+
 main a {
     color: var(--dark-text);
 }
 
 main a:hover {
     color: var(--accent-blue);
-}
-
-main #contact_main {
-    background: var(--accent-red);
-    color: var(--light-text);
 }
 
 footer {
