@@ -20,7 +20,7 @@ body a:hover {
     color: var(--accent-blue);
 }
 
-body #contact.html {
+body#contact {
     background: var(--accent-red);
     color: var(--dark-text);
 }
@@ -82,7 +82,7 @@ button a:hover {
     color: #fff;
 }
 
-button :focus-visible {
+button:focus-visible {
     outline: 2px solid var(--accent-blue);
     outline-offset: 2px;
 }
