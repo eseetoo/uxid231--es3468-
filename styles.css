@@ -11,7 +11,18 @@
     --font-size-large: 1.25rem; 
     --font-size-h2: 1.5rem; 
     --font-size-heading: 2.25rem; 
+
+    --space-base: 1rem;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 @font-face {
     font-family: 'Xmind-Italic';
@@ -111,6 +122,13 @@ nav {
 		sans-serif;
     font-weight: 400;
     font-size: var(--font-size-base);
+    margin-block: var(--space-base);
+    margin-inline: auto;
+    padding: 1.2rem 1rem;
+}
+
+.nav_links {
+    justify-content: left;
 }
 
 nav a {
@@ -124,8 +142,18 @@ nav a:hover {
 main {
     background: var(--background-beige);
     color: var(--dark-text);
+    margin-block: var(--space-base);
+    margin-inline: auto;
+    padding: 1.2rem 1rem;
 }
 
+#ES {
+    padding: 1.2rem 2rem;
+}
+
+#creative {
+    color: var(--accent-red);
+}
 
 
 main a {
@@ -149,7 +177,10 @@ main a:hover {
 footer {
     background: var(--footer-beige);
     color: var(--dark-text);
-    line-height: 1;
+    line-height: 1.3;
+    margin-block: var(--space-base);
+    margin-inline: auto;
+    padding: 1.2rem 1rem;
 }
 
 footer p {
@@ -282,3 +313,31 @@ p {
     text-wrap: balance;
     text-decoration: underline;
 }
+
+#more_on_me {
+    background: var(--accent-red);
+    margin: var(--space-base);
+    line-height: 1.5;
+    padding: 2rem;
+    max-width: 200ch;
+    color: var(--background-beige);
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+
+.about_emphasis {
+    font-size: var(--font-size-large);
+}
+
+.about_adj {
+    font-weight:bold;
+}
+
+#more_text {
+    line-height: 1.2;
+    padding: 1rem 0;
+    text-align: center;
+    text-wrap: balance;
+}
+
