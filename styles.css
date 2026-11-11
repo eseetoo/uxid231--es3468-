@@ -1,6 +1,7 @@
 :root{
     --background-beige: #F8F7F2;
     --footer-beige: #F1EFE9;
+    --beige3: #E6E0D8;
     --dark-text: #241B16;
     --light-text: #ccc;
     --accent-red: #E8334A;
@@ -135,6 +136,10 @@ nav {
 }
 
 
+a {
+    line-height: 2rem;
+}
+
 nav a {
     color: var(--dark-text);
 }
@@ -162,6 +167,10 @@ main {
     margin-inline: auto;
     padding: 1.2rem 1rem;
     line-height: 1.3;
+    width: 100%;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #creative {
@@ -246,6 +255,9 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
+img {
+    margin: var(--space-base);
+}
 
 h1 {
     font-size: var(--font-size-heading);
@@ -332,6 +344,8 @@ p {
     line-height: 1.2;
     width: 100%;
     max-width: 60rem;
+    margin: 2rem 0rem;
+    margin-inline: auto;
 }
 #disaster-description {
     font-size: var(--font-size-small);
@@ -459,11 +473,18 @@ p {
     background: var(--footer-beige);
     text-wrap: balance;
     border-radius: 15px;
-    padding: 1rem;
+    padding: .8rem;
     border: 1px solid var(--dark-text);
     width: 100%;
     max-width: 60rem;
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
+    line-height: 1.2;
+}
+
+.exp-shadow {
+    background: var(--beige3);
+    padding: .8rem;
+    border-radius: 15px;
 }
 
 #about {
@@ -475,6 +496,25 @@ p {
     margin-bottom: 2rem;
     width: 100%;
     max-width: 60rem;
+}
+
+#about-sections {
+    width: 100%;
+    max-width: 50rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: inherit;
+    background-color: var(--footer-beige);
+    border: 1px solid var(--dark-text);
+    border-radius: 15px;
+}
+
+#about-sections a {
+    padding: 1.5rem;
+}
+
+.project-caption {
+    margin-bottom: 2rem;
 }
 
 
