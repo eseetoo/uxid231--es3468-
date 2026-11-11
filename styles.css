@@ -199,7 +199,6 @@ footer {
     margin-block: var(--space-base);
     margin-inline: auto;
     padding: 1.2rem 1rem;
-    gap: 2rem;
     width: 100%;
     max-width: 60rem;
 }
