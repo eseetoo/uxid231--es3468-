@@ -149,15 +149,11 @@ nav a:hover {
 }  
 
 .nav-links {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding: 0rem 18rem;
+   margin-left:19rem;
 }
 
 .logo{
-    display: flex;
-    align-items: center;
+   
 }
 
 main {
@@ -406,7 +402,7 @@ p {
     border-radius: 15px;
     text-align: center;
     width: 100%;
-    max-width: 11rem;
+    max-width: 60rem;
     margin: .5rem .1rem;
 }
 
@@ -431,7 +427,6 @@ p {
 		Roboto,
 		sans-serif;
     font-weight: 400;
-    max-width: 35ch;
     text-wrap: balance;
     color: var(--background-beige);
     
@@ -460,7 +455,7 @@ p {
 }
 
 #ES {
-    padding: 12rem 2rem;
+    padding: 9rem 2rem;
     width: 100%;
     max-width: 60rem;
 }
