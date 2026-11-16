@@ -112,15 +112,35 @@ header {
     background: var(--background-beige);
     color: var(--dark-text);
     
-
+    padding: 1rem 1rem;
     margin-block: var(--space-base);
     margin-inline: auto;
-    padding: 1.2rem 1rem;
+    padding: 2.5rem 0rem;
     width: 100%;
     max-width: 60rem;
-    
-  
 
+   
+    margin: 0 auto;
+   
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+    
+#logo{
+    position: absolute;
+    top: 0rem;
+    margin: 0rem;
+
+}
+.menu {
+    margin-left:auto;
+    
+    position: absolute;
+    top: 0rem;
+    left: 27rem;
+}
     .menu-toggle {
         font-size: 1.75rem;
         line-height: 1;
@@ -133,6 +153,10 @@ header {
         &:hover {
             background-color: var(--footer-beige);
         }
+    }
+
+    .menu-toggle img {
+        margin:0;
     }
 
     .icon {
@@ -157,35 +181,57 @@ header {
             display: block;
         }
     }
-}
- .logo {
-    position: sticky;
-	top: 0;
-	z-index: 10;
-    background-color: #0057E1;
- }
+
+
 
  #nav {
-    background-color: var(--accent-red);
+    background-color: var(--background-beige);
     width: 100%;
     margin-block-start: 0.75rem;
     display:none;
-
-    li {
-        padding:0;
-        border-top: 1px solid;
-
-        a{
-            color:var(--accent-blue);
-            padding: var(--space-base);
-            display:block;
-        }
-    }
-
-    .header-controls:has(#menu-state:checked) ~ #nav {
-        display:block;
-    }
+    text-align: left;
+    margin-top: 1rem;
  }
+
+#nav li {
+    display: block;
+    padding: .5rem 0rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    border-bottom: 1px solid var(--dark-text);
+    text-align: left;
+}
+
+#nav a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.header-controls:has(#menu-state:checked) ~ #nav {
+    display:block;
+}
+
+header:has(#menu-state:checked) #nav {
+    display: block;
+}
+
+#nav ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+    
+
+
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
 
 nav {
     background: var(--background-beige);
