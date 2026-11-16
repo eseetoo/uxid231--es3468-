@@ -18,8 +18,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -113,7 +111,81 @@ body a:hover {
 header {
     background: var(--background-beige);
     color: var(--dark-text);
+    
+
+    margin-block: var(--space-base);
+    margin-inline: auto;
+    padding: 1.2rem 1rem;
+    width: 100%;
+    max-width: 60rem;
+    
+  
+
+    .menu-toggle {
+        font-size: 1.75rem;
+        line-height: 1;
+
+        width: 100%;
+        max-width: 60rem;
+
+       
+
+        &:hover {
+            background-color: var(--footer-beige);
+        }
+    }
+
+    .icon {
+        text-align: center;
+        height: 100%;
+        display: block;
+
+        position: relative;
+        top:1rem;
+    }
+
+    .icon-close {
+        display:none;
+    }
+
+    #menu-state:checked ~ .menu-toggle {
+        .icon-open {
+            display: none;
+        }
+
+        .icon-close {
+            display: block;
+        }
+    }
 }
+ .logo {
+    position: sticky;
+	top: 0;
+	z-index: 10;
+    background-color: #0057E1;
+ }
+
+ #nav {
+    background-color: var(--accent-red);
+    width: 100%;
+    margin-block-start: 0.75rem;
+    display:none;
+
+    li {
+        padding:0;
+        border-top: 1px solid;
+
+        a{
+            color:var(--accent-blue);
+            padding: var(--space-base);
+            display:block;
+        }
+    }
+
+    .header-controls:has(#menu-state:checked) ~ #nav {
+        display:block;
+    }
+ }
 
 nav {
     background: var(--background-beige);
@@ -148,13 +220,8 @@ nav a:hover {
     color: var(--accent-blue);
 }  
 
-.nav-links {
-   margin-left:19rem;
-}
 
-.logo{
-   
-}
+
 
 main {
     background: var(--background-beige);
