@@ -110,7 +110,7 @@ body a:hover {
 }
 
 header {
-    background: var(--accent-red);
+    background: var(--background-beige);
     color: var(--dark-text);
     
     padding: 1rem 1rem;
@@ -120,10 +120,6 @@ header {
     width: 100%;
     max-width: 60rem;
 
-   
-    margin: 0 auto;
-   
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -132,7 +128,8 @@ header {
 #logo{
     position: absolute;
     top: 0rem;
-    margin: 0rem;
+    margin-left: 10px;
+    margin-top: 5px;
 
 }
 .menu {
@@ -140,7 +137,7 @@ header {
     
     position: absolute;
     top: 0rem;
-    right: 10rem;
+    right: 15px;
 }
     .menu-toggle {
         font-size: 1.75rem;
@@ -166,7 +163,7 @@ header {
         display: block;
 
         position: relative;
-        top:1rem;
+        
     }
 
     .icon-close {
@@ -364,7 +361,7 @@ button:focus-visible {
 }
 
 img {
-    margin: var(--space-base);
+    
     max-width: 100%;
     height: auto;
 }
@@ -572,7 +569,7 @@ p {
     padding: 9rem 2rem;
     width: 100%;
     max-width: 60rem;
-    background-color: var(--accent-blue);
+    background-color: var(--background-beige);
 }
 
 #arrow {
@@ -581,7 +578,6 @@ p {
     width: 100%;
     max-width: 60rem;
     align-content: center;
-    background-color: #0057E1;
 }
 
 .experience_description {
@@ -617,7 +613,7 @@ p {
     width: 100%;
     max-width: 50rem;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: .6rem;
     text-align: inherit;
     background-color: var(--footer-beige);
     border: 1px solid var(--dark-text);
@@ -625,7 +621,8 @@ p {
 }
 
 #about-sections a {
-    padding: 1.5rem;
+    padding: 1rem;
+    font-size: var(--font-size-base);
 }
 
 .project-caption {
